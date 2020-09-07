@@ -6,6 +6,7 @@ public class AlunoFatecSJC {
     public int ra;
     public double nota;
     public String curso;
+    public boolean aprovado;
 
     // ----------------------------------------------------- //
     
@@ -58,7 +59,24 @@ public class AlunoFatecSJC {
     public void setCurso(String curso) {
         this.curso = curso;
     }
+
+    public boolean isAprovado() {
+        return aprovado;
+    }
+
+    public void setAprovado(boolean aprovado) {
+        this.aprovado = aprovado;
+    }
+    
     
     // ----------------------------------------------------- //
+
+    public AlunoFatecSJC(String nome, int ra, double nota, String curso, boolean aprovado) {
+        this.nome = nome;
+        this.ra = ra;
+        this.nota = nota;
+        this.curso = curso;
+        this.aprovado = aprovado;
+    }
     
 }

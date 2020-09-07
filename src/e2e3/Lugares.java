@@ -6,6 +6,7 @@ public class Lugares {
     private String clima;
     public boolean disponibilidade;
     public String pais;
+    public String idioma;
     
     // COMEÇO METODOS //
     
@@ -48,14 +49,24 @@ public class Lugares {
     public void setPais(String p){ 
         this.pais = p;
     }
-    
-    
-    public void status(){
-        System.out.println("A cidade de " + this.getNome() );
-        System.out.print("Está disponivel? " + this.getDisponibilidade() + " ");
-        
-    }    
+
+    public String getIdioma() {
+        return idioma;
+    }
+
+    public void setIdioma(String idioma) {
+        this.idioma = idioma;
+    }
     // FIM ATRIBUTOS // 
 
-
+    public Lugares(String nome, String clima, boolean disponibilidade, String pais, String idioma) {
+        this.nome = nome;
+        this.clima = clima;
+        this.disponibilidade = disponibilidade;
+        this.pais = pais;
+        this.idioma = idioma;
+    }
+   
+    
+    
 }

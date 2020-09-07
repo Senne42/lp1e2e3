@@ -6,6 +6,7 @@ public class InstrumentoMusical {
     public String nome;
     public String tamanho;
     public double peso;
+    public String cor;
 
     
     public void tocar(){
@@ -54,6 +55,24 @@ public class InstrumentoMusical {
 
     public void setTamanho(String tamanho) {
         this.tamanho = tamanho;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    
+    
+    public InstrumentoMusical(String tipo, String nome, String tamanho, double peso, String cor) {
+        this.tipo = tipo;
+        this.nome = nome;
+        this.tamanho = tamanho;
+        this.peso = peso;
+        this.cor = cor;
     }
 
     

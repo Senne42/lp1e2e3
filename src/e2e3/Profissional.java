@@ -5,7 +5,9 @@ public class Profissional {
     public String nome;
     private String cargo;
     public int idade;
-    public int empresa;
+    public String empresa;
+    private double salario;
+    
 
     public void contratar(){
         
@@ -47,12 +49,28 @@ public class Profissional {
         this.idade = idade;
     }
 
-    public int getEmpresa() {
+    public String getEmpresa() {
         return empresa;
     }
 
-    public void setEmpresa(int empresa) {
+    public void setEmpresa(String empresa) {
         this.empresa = empresa;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    
+    public Profissional(String nome, String cargo, int idade, String empresa, double salario) {
+        this.nome = nome;
+        this.cargo = cargo;
+        this.idade = idade;
+        this.empresa = empresa;
+        this.salario = salario;
     }
     
     

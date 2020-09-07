@@ -6,6 +6,7 @@ public class Calçado {
     public int tamanho;
     public String cor;
     public String marca;
+    public double valor;
     
     // COMEÇO METODOS //
     
@@ -48,4 +49,23 @@ public class Calçado {
     public void setMarca(String ma){ 
         this.marca = ma;
     }   
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+    
+    
+
+    public Calçado(String modelo, int tamanho, String cor, String marca, double valor) {
+        this.modelo = modelo;
+        this.tamanho = tamanho;
+        this.cor = cor;
+        this.marca = marca;
+        this.valor = valor;
+    }
+    
 }
