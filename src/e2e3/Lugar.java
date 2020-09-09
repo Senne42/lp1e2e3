@@ -1,7 +1,7 @@
 
 package e2e3;
 
-public class Lugares {
+public class Lugar {
     public String nome;
     private String clima;
     public boolean disponibilidade;
@@ -59,7 +59,7 @@ public class Lugares {
     }
     // FIM ATRIBUTOS // 
 
-    public Lugares(String nome, String clima, boolean disponibilidade, String pais, String idioma) {
+    public Lugar(String nome, String clima, boolean disponibilidade, String pais, String idioma) {
         this.nome = nome;
         this.clima = clima;
         this.disponibilidade = disponibilidade;
